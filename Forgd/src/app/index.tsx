@@ -1,12 +1,12 @@
-import React from 'react';
+﻿import React from 'react';
 import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 
-export default function Index() {
+export default function App() {
   return (
     <SafeAreaView style={styles.page}>
       <View style={styles.container}>
-        <Text style={styles.title}>Forgd is running</Text>
-        <Text style={styles.subtitle}>This is the default web page. Replace this with your app UI.</Text>
+        <Text style={styles.title}>Hello World</Text>
+        <Text style={styles.subtitle}>Your React Native app is running.</Text>
       </View>
     </SafeAreaView>
   );
@@ -24,13 +24,14 @@ const styles = StyleSheet.create({
     padding: 24,
   },
   title: {
-    fontSize: 28,
+    fontSize: 32,
     fontWeight: '700',
     marginBottom: 12,
+    color: '#222',
   },
   subtitle: {
     fontSize: 18,
-    textAlign: 'center',
     color: '#555',
+    textAlign: 'center',
   },
 });
